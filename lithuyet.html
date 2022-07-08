@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            padding-top: 50px
+        }
+    </style>
+</head>
+<body>
+<script>
+    let x=[-3, 5, 1, 3, 2, 10]; // Khai bao va khoi tao cac phan tu mang
+    let first=0; // khai bao bien first vaf gan bang 0, duyet phan tu dau tien trong mang.
+    let last=x.length-1;
+    while (first<last){
+        let b=x[first];
+        x[first]=x[last];
+        x[last]=b;
+        first++;
+        last--;
+    }
+document.write(x)
+
+</script>
+</body>
+</html>
