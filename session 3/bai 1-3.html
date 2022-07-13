@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button"onclick="inputNumber()">click me</button>
+<p id="sum">0</p>
+<script>
+    function inputNumber(a,b) {
+         a=parseInt(prompt("Nhap so thu nhat"));
+         b=parseInt(prompt("Nhap so thu hai"));
+if (a>b){
+    alert("a la so lon nhat");
+}else if (a<=b){
+    let sum=a+b;
+    alert("tong hai so "+sum);
+   // document.getElementById("sum").innerText=tổng hai số là  "+ sum;
+}
+    }
+</script>
+</body>
+</html>

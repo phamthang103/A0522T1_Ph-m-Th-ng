@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrStar1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrStar2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let star = prompt("Nhap vao ngoi sao can tim");
+    check_star(star)// cau nay co tac dung gi
+    document.write(check_star(star))
+    function check_star(star)
+    {
+        let result = "";
+        for (let i = 0; i < arrStar1.length; i++)
+        {
+            if (star == arrStar1[i])
+            {
+                result= arrStar2[i];
+            } else {
+                result = "Khong tim thay ngoi sao nao"
+            }
+        }return result;
+    }
+
+
+</script>
+</body>
+</html>
