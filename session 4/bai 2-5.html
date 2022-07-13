@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhập vào 3 số nguyên bất kỳ
+        </td>
+    </tr>
+    <tr>
+        <td>Nhap so thu nhat</td>
+        <td>
+            <input type="number"id="number1">
+        </td>
+    </tr>
+    <tr>
+        <td>Nhap so thu hai</td>
+        <td>
+            <input type="number"id="number2">
+        </td>
+    </tr>
+    <tr>
+        <td>Nhap so thu ba</td>
+        <td>
+            <input type="number"id="number3">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button"onclick="check_result()">So nho nhat la</button>
+        </td>
+        <td><p id="result">0</p></td>
+    </tr>
+</table>
+<script>
+    function check_result() {
+text1=document.getElementById("number1").value;
+text2=document.getElementById("number2").value;
+text3=document.getElementById("number3").value;
+let arr=[text1,text2,text3]
+        console.log(arr)
+        let count = 0;
+        for (let i = 0; i < arr.length; i++){
+            for (let j = 0; j <arr.length; j++){
+                if (arr[i]<=arr[j]){
+                    count++
+                }
+            }
+            if (count==arr.length){
+                document.getElementById("result").innerText=" số nhỏ nhất là " + arr[i];
+            }
+            count=0;
+        }
+    }
+</script>
+</body>
+</html>

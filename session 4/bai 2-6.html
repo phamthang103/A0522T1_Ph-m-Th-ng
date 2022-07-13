@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <button type="button"onclick="check_result()">kiem tra</button>
+        </td>
+        <td>
+            <input type="number"id="number">
+        </td>
+    </tr>
+    <td>
+        <p id="result">0</p>
+    </td>
+</table>
+<script>
+    function check_result() {
+        let number1=document.getElementById("number").value;
+        if (number1>0){
+            document.write("true")
+        }else if (number1==0){
+            document.write("0")
+        }else {
+            document.write("false")
+        }
+
+    }
+</script>
+</body>
+</html>

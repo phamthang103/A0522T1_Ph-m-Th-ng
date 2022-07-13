@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhap vao:
+        </td>
+        <td>
+            <input type="text"id="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button"onclick="check_result()">Kiem tra</button>
+        </td>
+        <td>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+<script>
+    function check_result() {
+        let number=document.getElementById("text").value;
+        if (number%number==0){
+            document.getElementById("result").innerText="True";
+        }else {
+            document.getElementById("result").innerText="False";
+        }
+
+    }
+</script>
+</body>
+</html>
