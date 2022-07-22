@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  /*  let Circle=function (radius) {
+this.radius= radius;
+    };
+    this.getRadius=function () {
+return radius;
+    }
+    this.getArea=function () {
+return Math.PI* radius* radius;
+    }
+let circle=new Circle(2);
+    let radius=circle.getRadius();
+    let area=circle.getArea();
+    alert("radius "+radius+ ";area: "+area);
+*/
+  let Battery = function () {
+
+      this.setEnergy = function (energy) {
+          this.energy = energy;
+      };
+      this.getEnergy=function () {
+          return this.energy;
+      };
+      this.decreaseEnergy=function () {
+          if (this.energy>0){
+              this.energy--;
+          }
+      }
+    };
+
+
+
+</script>
+</body>
+</html>
